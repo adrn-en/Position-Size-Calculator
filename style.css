@@ -130,6 +130,24 @@ body {
 #created a:hover {
 	text-decoration: underline;
 }
+#reset {
+	padding: 0.5rem 0;
+	text-transform: uppercase;
+	min-width: 200px;
+	margin-inline: auto;
+	font-size: 1rem;
+	background-color: var(--clr-900);
+	color: var(--clr-400);
+	outline: none;
+	border: 2px solid var(--clr-900);
+	border-radius: 30px;
+	cursor: pointer;
+	letter-spacing: 1px;
+	transition: 0.2s;
+}
+#reset:hover {
+	background-color: transparent;
+}
 @media (min-width: 769px) {
 	.container {
 		grid-template-columns: repeat(2, 1fr);

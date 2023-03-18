@@ -8,7 +8,8 @@ const margin = document.getElementById('margin'),
 	profit = document.getElementById('profit'),
 	loss = document.getElementById('loss'),
 	realized_profit = document.getElementById('realizedprofit'),
-	positionsize = document.getElementById('positionsize')
+	positionsize = document.getElementById('positionsize'),
+	resetBtn = document.getElementById('reset')
 
 const numOnly = (e) => {
 	var charCode = e.which ? e.which : e.keyCode
@@ -41,3 +42,10 @@ const calculate = () => {
 inputs.forEach((input) => {
 	input.addEventListener('input', calculate)
 })
+
+resetBtn.addEventListener('click', () => {
+	inputs.forEach((input) => {
+		input.value = ''
+	})
+})
+
