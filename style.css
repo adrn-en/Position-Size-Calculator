@@ -112,7 +112,18 @@ body {
 #loss {
 	color: #ff0000;
 }
-
+#created {
+	text-align: center;
+}
+#created a {
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 2px;
+}
+#created a:hover {
+	text-decoration: underline;
+}
 @media (min-width: 769px) {
 	.container {
 		grid-template-columns: repeat(2, 1fr);
