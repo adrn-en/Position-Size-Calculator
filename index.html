@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+    <title>Position Size Calculator</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1 class="title">POSITION SIZE CALCULATOR</h1>
+        <div class="container grid">
+            <div class="input-container grid">
+                <div class="grid">
+                    <p class="labels">MARGIN $</p>
+                    <input type="text" id="margin" class="inputs" placeholder="0.00" onkeypress="numOnly(event)">
+                </div>
+                <div class="flex wrap">
+                    <div class="grid">
+                        <p class="labels">LEVERAGE</p>
+                        <input type="text" id="leverage" class="inputs" placeholder="0" onkeypress="numOnly(event)">
+                    </div>
+                    <div class="grid">
+                        <p class="labels">TP %</p>
+                        <input type="text" id="tp" class="inputs" placeholder="0" onkeypress="numOnly(event)">
+                    </div>
+                </div>
+                <div class="flex wrap">
+                    <div class="grid">
+                        <p class="labels">CAPITAL RISK %</p>
+                        <input type="text" id="risk" class="inputs" placeholder="0" onkeypress="numOnly(event)">
+                    </div>
+                    <div class="grid">
+                        <p class="labels">SL %</p>
+                        <input type="text" id="sl" class="inputs" placeholder="0" onkeypress="numOnly(event)">
+                    </div>
+                </div>
+            </div>
+            <div class="output-container grid">
+                <div class="flex">
+                    <p class="labels">RISK PER TRADE %</p>
+                    <p class="output" id="riskPerTrade">$0.00</p>
+                </div>
+                <div class="flex">
+                    <p class="labels">PROFIT $</p>
+                    <p class="output" id="profit">$0.00</p>
+                </div>
+                <div class="flex">
+                    <p class="labels">LOSS $</p>
+                    <p class="output" id="loss">$0.00</p>
+                </div>
+                <div class="flex">
+                    <p class="labels">REALIZED P&L $</p>
+                    <p class="output" id="realizedprofit">$0.00</p>
+                </div>
+                <div class="flex">
+                    <p class="labels">POSITION SIZE $</p>
+                    <p class="output" id="positionsize">$0.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
