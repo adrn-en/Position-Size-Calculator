@@ -9,7 +9,8 @@ const margin = document.getElementById('margin'),
 	loss = document.getElementById('loss'),
 	realized_profit = document.getElementById('realizedprofit'),
 	positionsize = document.getElementById('positionsize'),
-	resetBtn = document.getElementById('reset')
+	resetBtn = document.getElementById('reset'),
+	output = document.querySelectorAll('.output')
 
 const numOnly = (e) => {
 	var charCode = e.which ? e.which : e.keyCode
@@ -46,6 +47,9 @@ inputs.forEach((input) => {
 resetBtn.addEventListener('click', () => {
 	inputs.forEach((input) => {
 		input.value = ''
+	})
+	output.forEach((res) => {
+		res.innerText = '$0.00'
 	})
 })
 
