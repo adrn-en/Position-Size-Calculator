@@ -61,10 +61,10 @@ body {
 .output-container .flex {
 	justify-content: space-between;
 }
-.input-container .flex:last-child .grid:first-child {
+.swap .grid:first-child {
 	order: 2;
 }
-.input-container .flex:last-child .grid:last-child {
+.swap .grid:last-child {
 	order: 1;
 }
 .title {
@@ -103,8 +103,6 @@ body {
 .output {
 	font-size: 1.5rem;
 	padding: 0.5rem 1.5rem;
-	height: 100%;
-	width: 100%;
 	color: var(--clr-400);
 	font-weight: var(--fw-700);
 	order: 1;
@@ -169,10 +167,10 @@ body {
 	.output-container .lables {
 		order: 1;
 	}
-	.input-container .flex:last-child .grid:first-child {
+	.swap .grid:first-child {
 		order: 1;
 	}
-	.input-container .flex:last-child .grid:last-child {
+	.swap .grid:last-child {
 		order: 2;
 	}
 }
