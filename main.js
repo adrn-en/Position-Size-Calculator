@@ -44,8 +44,6 @@ inputs.forEach((input) => {
 	input.addEventListener('input', () => {
 		if (capital_risk.value > 100) {
 			capital_risk.value = 100
-		} else if (capital_risk.value < 1) {
-			capital_risk.value = 1
 		} else if (leverage.value > 125) {
 			leverage.value = 125
 		}
