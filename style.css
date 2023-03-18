@@ -61,6 +61,12 @@ body {
 .output-container .flex {
 	justify-content: space-between;
 }
+.input-container .flex:last-child .grid:first-child {
+	order: 2;
+}
+.input-container .flex:last-child .grid:last-child {
+	order: 1;
+}
 .title {
 	font-size: 2rem;
 	font-weight: var(--fw-700);
@@ -144,5 +150,11 @@ body {
 	}
 	.output-container .lables {
 		order: 1;
+	}
+	.input-container .flex:last-child .grid:first-child {
+		order: 1;
+	}
+	.input-container .flex:last-child .grid:last-child {
+		order: 2;
 	}
 }
